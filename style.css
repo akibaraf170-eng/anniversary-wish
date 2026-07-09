@@ -1,0 +1,979 @@
+/* ==========================================
+   PREMIUM ANNIVERSARY WEBSITE
+   style.css
+========================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#050505;
+
+overflow-x:hidden;
+
+color:white;
+
+}
+
+/* ============================= */
+
+.hidden{
+
+display:none;
+
+}
+
+/* ============================= */
+
+section{
+
+min-height:100vh;
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+padding:40px;
+
+}
+
+/* ============================= */
+
+#particles{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+/* ============================= */
+
+#intro{
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#000000,
+
+#180012,
+
+#000000
+
+);
+
+overflow:hidden;
+
+}
+
+.intro-content{
+
+text-align:center;
+
+z-index:10;
+
+}
+
+.intro-content h1{
+
+font-size:70px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ff5ea8;
+
+margin:20px 0;
+
+text-shadow:
+
+0 0 20px #ff5ea8,
+
+0 0 50px #ff5ea8;
+
+}
+
+.intro-content h2{
+
+font-size:30px;
+
+font-weight:300;
+
+letter-spacing:2px;
+
+}
+
+.intro-content p{
+
+font-size:22px;
+
+margin-top:15px;
+
+color:#ffd6ea;
+
+}
+
+/* ============================= */
+
+.fade{
+
+opacity:0;
+
+animation:fade 2s forwards;
+
+}
+
+.delay{
+
+animation-delay:2s;
+
+}
+
+.delay2{
+
+animation-delay:4s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ============================= */
+
+button{
+
+padding:16px 40px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+margin-top:35px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#ff3f8e,
+
+#ff6cab
+
+);
+
+color:white;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 15px #ff4c97,
+
+0 0 40px #ff4c97;
+
+}
+
+button:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+box-shadow:
+
+0 0 25px hotpink,
+
+0 0 60px hotpink;
+
+}
+
+/* ============================= */
+
+.glass{
+
+width:420px;
+
+max-width:90%;
+
+padding:45px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+text-align:center;
+
+box-shadow:
+
+0 0 40px rgba(255,105,180,.25);
+
+}
+
+.glass h1{
+
+font-size:60px;
+
+margin-bottom:10px;
+
+}
+
+.glass h2{
+
+margin-bottom:10px;
+
+}
+
+.glass p{
+
+margin-bottom:20px;
+
+color:#ddd;
+
+}
+
+/* ============================= */
+
+input{
+
+width:100%;
+
+padding:16px;
+
+border-radius:40px;
+
+border:none;
+
+outline:none;
+
+font-size:18px;
+
+text-align:center;
+
+margin-top:15px;
+
+background:white;
+
+color:black;
+
+}
+
+/* ============================= */
+
+#wrongPassword{
+
+margin-top:20px;
+
+color:#ff7373;
+
+font-weight:bold;
+
+}
+
+/* ============================= */
+
+.gift-container{
+
+text-align:center;
+
+}
+
+.gift-box{
+
+width:180px;
+
+height:180px;
+
+border-radius:25px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:90px;
+
+cursor:pointer;
+
+margin:auto;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ff4f96,
+
+#ff86bd
+
+);
+
+box-shadow:
+
+0 0 25px hotpink,
+
+0 0 60px hotpink;
+
+transition:.5s;
+
+animation:giftFloat 2s infinite ease-in-out;
+
+}
+
+.gift-box:hover{
+
+transform:scale(1.12) rotate(5deg);
+
+}
+
+@keyframes giftFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.gift-container h2{
+
+margin-top:35px;
+
+font-size:35px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ffd1e5;
+
+}
+
+.gift-container p{
+
+margin-top:10px;
+
+color:#ddd;
+
+font-size:18px;
+
+}
+
+/* ============================= */
+
+#hero{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#000,
+
+#130010,
+
+#000
+
+);
+
+text-align:center;
+
+}
+
+.overlay{
+
+max-width:900px;
+
+}
+
+.overlay h2{
+
+font-size:30px;
+
+font-weight:300;
+
+letter-spacing:3px;
+
+}
+
+.overlay h1{
+
+font-size:95px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ff74b7;
+
+margin:30px 0;
+
+text-shadow:
+
+0 0 20px hotpink,
+
+0 0 60px hotpink;
+
+}
+
+.overlay p{
+
+font-size:24px;
+
+color:#ffd7ea;
+
+}
+
+/* ============================= */
+
+#musicBtn{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+font-size:28px;
+
+z-index:999;
+
+padding:0;
+
+}
+
+/* ---------- LETTER PAGE ---------- */
+
+#letterPage{
+
+background:
+linear-gradient(
+180deg,
+#050505,
+#12000d,
+#050505
+);
+
+padding:80px 20px;
+
+}
+
+.letter-card{
+
+width:900px;
+max-width:95%;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:45px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 0 50px rgba(255,105,180,.15);
+
+}
+
+.letter-card h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:60px;
+
+text-align:center;
+
+margin-bottom:40px;
+
+color:#ff89c4;
+
+}
+
+#typewriter{
+
+font-size:20px;
+
+line-height:2;
+
+color:#f7f7f7;
+
+white-space:pre-wrap;
+
+}
+
+/* ---------- GALLERY ---------- */
+
+#galleryPage{
+
+flex-direction:column;
+
+background:
+linear-gradient(
+180deg,
+#050505,
+#1a0013,
+#050505
+);
+
+}
+
+#galleryPage h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+margin-bottom:50px;
+
+color:#ff79bc;
+
+text-align:center;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+width:100%;
+
+max-width:1200px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:340px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.5s;
+
+border:2px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.5);
+
+}
+
+.gallery img:hover{
+
+transform:
+scale(1.05)
+rotate(-1deg);
+
+box-shadow:
+0 0 30px hotpink;
+
+}
+
+/* ---------- COUNTER ---------- */
+
+#counterPage{
+
+flex-direction:column;
+
+background:
+linear-gradient(
+180deg,
+#050505,
+#140010,
+#050505
+);
+
+}
+
+#counterPage h1{
+
+font-size:60px;
+
+font-family:'Great Vibes',cursive;
+
+margin-bottom:60px;
+
+color:#ff87c6;
+
+text-align:center;
+
+}
+
+.counterBox{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.counterBox div{
+
+width:170px;
+
+height:170px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 0 25px rgba(255,105,180,.2);
+
+transition:.4s;
+
+}
+
+.counterBox div:hover{
+
+transform:translateY(-10px);
+
+}
+
+.counterBox span{
+
+font-size:50px;
+
+font-weight:bold;
+
+color:#ff8bc8;
+
+}
+
+.counterBox p{
+
+margin-top:10px;
+
+font-size:18px;
+
+color:#ddd;
+
+}
+
+/* ---------- FINAL ---------- */
+
+#finalPage{
+
+flex-direction:column;
+
+text-align:center;
+
+background:
+radial-gradient(
+circle,
+#240018,
+#000000
+);
+
+overflow:hidden;
+
+}
+
+#finalPage h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:90px;
+
+color:#ff77bb;
+
+text-shadow:
+0 0 20px hotpink,
+0 0 60px hotpink;
+
+margin-bottom:25px;
+
+}
+
+#finalPage p{
+
+font-size:24px;
+
+max-width:900px;
+
+line-height:1.8;
+
+color:#ffe3ef;
+
+margin-bottom:50px;
+
+}
+
+/* ---------- FIREWORK AREA ---------- */
+
+#fireworks{
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+/* ---------- FLOATING HEART ---------- */
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:22px;
+
+animation:heartUp linear forwards;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+
+@keyframes heartUp{
+
+0%{
+
+transform:
+translateY(0)
+scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-110vh)
+scale(1.5);
+
+opacity:0;
+
+}
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+.overlay h1{
+
+font-size:60px;
+
+}
+
+#galleryPage h1{
+
+font-size:50px;
+
+}
+
+#counterPage h1{
+
+font-size:45px;
+
+}
+
+#finalPage h1{
+
+font-size:60px;
+
+}
+
+.letter-card{
+
+padding:25px;
+
+}
+
+#typewriter{
+
+font-size:17px;
+
+line-height:1.9;
+
+}
+
+.counterBox div{
+
+width:130px;
+
+height:130px;
+
+}
+
+.counterBox span{
+
+font-size:36px;
+
+}
+
+button{
+
+font-size:16px;
+
+padding:14px 30px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.intro-content h1{
+
+font-size:48px;
+
+}
+
+.overlay h1{
+
+font-size:48px;
+
+}
+
+.letter-card h2{
+
+font-size:45px;
+
+}
+
+#galleryPage h1{
+
+font-size:42px;
+
+}
+
+#counterPage h1{
+
+font-size:38px;
+
+}
+
+#finalPage h1{
+
+font-size:48px;
+
+}
+
+.gallery img{
+
+height:260px;
+
+}
+
+}
